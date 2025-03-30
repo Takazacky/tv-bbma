@@ -4,8 +4,8 @@ import os
 
 app = Flask(__name__)
 
-BOT_TOKEN = os.getenv('7542408750:AAH5df9bHzlaBJSSuHwC95NGVH86nEGZlHo')         # Token bot Telegram dari environment
-CHAT_ID = os.getenv('-4796523227')             # Chat ID grup Telegram
+BOT_TOKEN = os.getenv('BOT_TOKEN')         # Token bot Telegram dari environment
+CHAT_ID = os.getenv('CHAT_ID')             # Chat ID grup Telegram
 
 @app.route('/', methods=['GET'])
 def index():
